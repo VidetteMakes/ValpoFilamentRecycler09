@@ -124,6 +124,30 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_R_POT_US
+#
+DEF Device_R_POT_US RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT_US" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 100 0 90 N
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # FilamentRecycler09_120ACV_24VDC
 #
 DEF FilamentRecycler09_120ACV_24VDC U 0 40 Y Y 1 F N
@@ -163,6 +187,40 @@ X 6 Vout 350 -150 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# FilamentRecycler09_AC
+#
+DEF FilamentRecycler09_AC U 0 40 Y Y 1 F N
+F0 "U" -10 330 50 H V C CNN
+F1 "FilamentRecycler09_AC" 30 -302 50 H V C CNN
+F2 "" -10 330 50 H I C CNN
+F3 "" -10 330 50 H I C CNN
+DRAW
+S -200 250 200 -250 0 1 0 N
+X CM ~ 300 -150 100 L 50 50 1 1 O
+X V+ ~ 300 150 100 L 50 50 1 1 O
+X V- ~ 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# FilamentRecycler09_HeaterController
+#
+DEF FilamentRecycler09_HeaterController U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H V C CNN
+F1 "FilamentRecycler09_HeaterController" -50 -400 50 H V C CNN
+F2 "" 0 300 50 H I C CNN
+F3 "" 0 300 50 H I C CNN
+DRAW
+S -450 250 450 -300 0 1 0 N
+X GND ~ -550 150 100 R 50 50 1 1 I
+X HeaterGND ~ 550 0 100 L 50 50 1 1 O
+X HeaterVdd ~ 550 150 100 L 50 50 1 1 O
+X Th1In ~ -550 -250 100 R 50 50 1 1 I
+X Th1Out ~ -550 -150 100 R 50 50 1 1 I
+X Th2In ~ -550 -50 100 R 50 50 1 1 I
+X Th2Out ~ -550 50 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # FilamentRecycler09_HeatingElement
 #
 DEF FilamentRecycler09_HeatingElement U 0 40 Y Y 1 F N
@@ -176,6 +234,39 @@ C 20 -50 57 0 1 0 N
 P 2 0 1 0 50 30 50 -130 N
 X 1 ~ -150 0 100 R 50 50 1 1 I
 X 2 ~ -150 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# FilamentRecycler09_LCDScreen
+#
+DEF FilamentRecycler09_LCDScreen U 0 40 Y Y 1 F N
+F0 "U" -50 350 50 H V C CNN
+F1 "FilamentRecycler09_LCDScreen" 0 -350 50 H V C CNN
+F2 "" -50 350 50 H I C CNN
+F3 "" -50 350 50 H I C CNN
+DRAW
+S -250 300 200 -300 0 1 0 N
+X GND 1 -350 -200 100 R 50 50 1 1 I
+X 5V 2 -350 -100 100 R 50 50 1 1 I
+X CLK 3 -350 0 100 R 50 50 1 1 I
+X DAT 4 -350 100 100 R 50 50 1 1 I
+X LAT 5 -350 200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# FilamentRecycler09_SpeedController
+#
+DEF FilamentRecycler09_SpeedController U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "FilamentRecycler09_SpeedController" 0 -350 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+S -300 300 250 -250 0 1 0 N
+X Vdd 1 -400 150 100 R 50 50 1 1 I
+X GND 2 -400 0 100 R 50 50 1 1 I
+X Ctr 3 -400 -150 100 R 50 50 1 1 I
+X Vout 4 350 150 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
@@ -319,6 +410,28 @@ P 6 0 1 0 -100 -145 -100 -55 -110 -85 -90 -85 -100 -55 -100 -65 F
 P 6 0 1 0 -70 -145 -70 -55 -80 -85 -60 -85 -70 -55 -70 -65 F
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_MEC_5G
+#
+DEF Switch_SW_MEC_5G SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_MEC_5G" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+$FPLIST
+ SW*MEC*5G*
+$ENDFPLIST
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X A 1 -200 0 100 R 50 50 0 1 P
+X B 3 200 0 100 L 50 50 0 1 P
+X A 2 -200 0 100 R 50 50 1 1 P N
+X B 4 200 0 100 L 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #

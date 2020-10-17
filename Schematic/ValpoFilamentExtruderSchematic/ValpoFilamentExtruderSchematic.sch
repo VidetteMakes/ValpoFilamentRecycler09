@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Motor:Motor_DC M?
-U 1 1 5F8662F0
-P 1250 2700
-F 0 "M?" H 1408 2696 50  0000 L CNN
-F 1 "Motor_DC" H 1408 2605 50  0000 L CNN
-F 2 "" H 1250 2610 50  0001 C CNN
-F 3 "~" H 1250 2610 50  0001 C CNN
-	1    1250 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L ArduinoMega2560:A000067 A?
 U 1 1 5F887C03
 P 6850 3550
@@ -43,34 +32,34 @@ $EndComp
 $Comp
 L Sensor_Temperature:PT100 TH?
 U 1 1 5F890441
-P 2200 1600
-F 0 "TH?" H 2298 1646 50  0000 L CNN
-F 1 "JTypeThermocouple" H 2298 1555 50  0000 L CNN
-F 2 "" H 2200 1650 50  0001 C CNN
-F 3 "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf" H 2200 1650 50  0001 C CNN
-	1    2200 1600
+P 2650 1300
+F 0 "TH?" H 2748 1346 50  0000 L CNN
+F 1 "JTypeThermocouple" H 2748 1255 50  0000 L CNN
+F 2 "" H 2650 1350 50  0001 C CNN
+F 3 "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf" H 2650 1350 50  0001 C CNN
+	1    2650 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sensor_Temperature:PT100 TH?
 U 1 1 5F891ED8
-P 1100 1600
-F 0 "TH?" H 1198 1646 50  0000 L CNN
-F 1 "JTypeThermocouple" H 1198 1555 50  0000 L CNN
-F 2 "" H 1100 1650 50  0001 C CNN
-F 3 "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf" H 1100 1650 50  0001 C CNN
-	1    1100 1600
+P 2200 850
+F 0 "TH?" H 2298 896 50  0000 L CNN
+F 1 "JTypeThermocouple" H 2298 805 50  0000 L CNN
+F 2 "" H 2200 900 50  0001 C CNN
+F 3 "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf" H 2200 900 50  0001 C CNN
+	1    2200 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L FilamentRecycler09:HeatingElement U?
 U 1 1 5F893064
-P 2800 900
-F 0 "U?" H 3042 1125 50  0000 C CNN
-F 1 "HeatingElement" H 3042 1034 50  0000 C CNN
-F 2 "" H 2800 1000 50  0001 C CNN
-F 3 "" H 2800 1000 50  0001 C CNN
-	1    2800 900 
+P 5150 900
+F 0 "U?" H 5392 1125 50  0000 C CNN
+F 1 "HeatingElement" H 5392 1034 50  0000 C CNN
+F 2 "" H 5150 1000 50  0001 C CNN
+F 3 "" H 5150 1000 50  0001 C CNN
+	1    5150 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -93,17 +82,6 @@ F 1 "Motor_Servo" H 5132 2474 50  0000 L CNN
 F 2 "" H 4800 2310 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4800 2310 50  0001 C CNN
 	1    4800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L FilamentRecycler09:120ACV_24VDC U?
-U 1 1 5F8A2677
-P 1650 4050
-F 0 "U?" H 1700 4615 50  0000 C CNN
-F 1 "120ACV_24VDC" H 1700 4524 50  0000 C CNN
-F 2 "" H 1650 4600 50  0001 C CNN
-F 3 "" H 1650 4600 50  0001 C CNN
-	1    1650 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -222,4 +200,376 @@ $EndComp
 Connection ~ 2000 5000
 Wire Wire Line
 	2000 5000 2450 5000
+$Comp
+L FilamentRecycler09:LCDScreen U?
+U 1 1 5F8A3BF4
+P 9550 2950
+F 0 "U?" H 9778 2996 50  0000 L CNN
+F 1 "LCDScreen" H 9778 2905 50  0000 L CNN
+F 2 "" H 9500 3300 50  0001 C CNN
+F 3 "" H 9500 3300 50  0001 C CNN
+	1    9550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8A4AE4
+P 8750 3050
+F 0 "#PWR?" H 8750 2900 50  0001 C CNN
+F 1 "+5V" H 8765 3223 50  0000 C CNN
+F 2 "" H 8750 3050 50  0001 C CNN
+F 3 "" H 8750 3050 50  0001 C CNN
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A538A
+P 8900 3150
+F 0 "#PWR?" H 8900 2900 50  0001 C CNN
+F 1 "GND" H 8905 2977 50  0000 C CNN
+F 2 "" H 8900 3150 50  0001 C CNN
+F 3 "" H 8900 3150 50  0001 C CNN
+	1    8900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3150 9200 3150
+Wire Wire Line
+	9200 3050 8750 3050
+Text GLabel 9200 2950 0    50   Input ~ 0
+SCL
+Text GLabel 9200 2850 0    50   Input ~ 0
+SDA
+Text GLabel 7650 1250 2    50   Input ~ 0
+SCL
+Text GLabel 7650 1350 2    50   Input ~ 0
+SDA
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8A719B
+P 3950 2500
+F 0 "#PWR?" H 3950 2350 50  0001 C CNN
+F 1 "+5V" H 3965 2673 50  0000 C CNN
+F 2 "" H 3950 2500 50  0001 C CNN
+F 3 "" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8A7825
+P 3950 2100
+F 0 "#PWR?" H 3950 1950 50  0001 C CNN
+F 1 "+5V" H 3965 2273 50  0000 C CNN
+F 2 "" H 3950 2100 50  0001 C CNN
+F 3 "" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2100 4500 2100
+Wire Wire Line
+	4500 2500 3950 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A8B65
+P 4100 2200
+F 0 "#PWR?" H 4100 1950 50  0001 C CNN
+F 1 "GND" H 4105 2027 50  0000 C CNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A909C
+P 4200 2600
+F 0 "#PWR?" H 4200 2350 50  0001 C CNN
+F 1 "GND" H 4205 2427 50  0000 C CNN
+F 2 "" H 4200 2600 50  0001 C CNN
+F 3 "" H 4200 2600 50  0001 C CNN
+	1    4200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2600 4500 2600
+Text GLabel 4500 2000 0    50   Input ~ 0
+Servo1
+Text GLabel 4500 2400 0    50   Input ~ 0
+Servo2
+Wire Wire Line
+	4100 2200 4500 2200
+Text GLabel 7650 1650 2    50   Input ~ 0
+Servo2
+Text GLabel 7650 1750 2    50   Input ~ 0
+Servo1
+$Comp
+L power:GND #PWR?
+U 1 1 5F8ABA6D
+P 4100 5400
+F 0 "#PWR?" H 4100 5150 50  0001 C CNN
+F 1 "GND" H 4105 5227 50  0000 C CNN
+F 2 "" H 4100 5400 50  0001 C CNN
+F 3 "" H 4100 5400 50  0001 C CNN
+	1    4100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8AC048
+P 4100 4900
+F 0 "#PWR?" H 4100 4750 50  0001 C CNN
+F 1 "+5V" H 4115 5073 50  0000 C CNN
+F 2 "" H 4100 4900 50  0001 C CNN
+F 3 "" H 4100 4900 50  0001 C CNN
+	1    4100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8AC446
+P 3150 2450
+F 0 "#PWR?" H 3150 2200 50  0001 C CNN
+F 1 "GND" H 3155 2277 50  0000 C CNN
+F 2 "" H 3150 2450 50  0001 C CNN
+F 3 "" H 3150 2450 50  0001 C CNN
+	1    3150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FilamentRecycler09:120ACV_24VDC U?
+U 1 1 5F8A2677
+P 1650 4050
+F 0 "U?" H 1700 4615 50  0000 C CNN
+F 1 "120ACV_24VDC" H 1700 4524 50  0000 C CNN
+F 2 "" H 1650 4600 50  0001 C CNN
+F 3 "" H 1650 4600 50  0001 C CNN
+	1    1650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 5F8B2D03
+P 9550 3800
+F 0 "SW?" H 9550 4085 50  0000 C CNN
+F 1 "Button" H 9550 3994 50  0000 C CNN
+F 2 "" H 9550 4000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9550 4000 50  0001 C CNN
+	1    9550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B3961
+P 9750 3800
+F 0 "#PWR?" H 9750 3550 50  0001 C CNN
+F 1 "GND" H 9755 3627 50  0000 C CNN
+F 2 "" H 9750 3800 50  0001 C CNN
+F 3 "" H 9750 3800 50  0001 C CNN
+	1    9750 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 3800 0    50   Input ~ 0
+UI_Button
+$Comp
+L FilamentRecycler09:AC U?
+U 1 1 5F8B9FB6
+P 800 3900
+F 0 "U?" H 858 4315 50  0000 C CNN
+F 1 "AC" H 858 4224 50  0000 C CNN
+F 2 "" H 790 4230 50  0001 C CNN
+F 3 "" H 790 4230 50  0001 C CNN
+	1    800  3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3750 1300 3750
+Wire Wire Line
+	1100 3900 1100 3850
+Wire Wire Line
+	1100 3850 1300 3850
+Wire Wire Line
+	1100 4050 1200 4050
+Wire Wire Line
+	1200 4050 1200 3950
+Wire Wire Line
+	1200 3950 1300 3950
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5F8BC546
+P 9550 4450
+F 0 "RV?" H 9483 4496 50  0000 R CNN
+F 1 "R_POT_US" H 9483 4405 50  0000 R CNN
+F 2 "" H 9550 4450 50  0001 C CNN
+F 3 "~" H 9550 4450 50  0001 C CNN
+	1    9550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8BCE8D
+P 9550 4600
+F 0 "#PWR?" H 9550 4350 50  0001 C CNN
+F 1 "GND" H 9555 4427 50  0000 C CNN
+F 2 "" H 9550 4600 50  0001 C CNN
+F 3 "" H 9550 4600 50  0001 C CNN
+	1    9550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8BD303
+P 9550 4300
+F 0 "#PWR?" H 9550 4150 50  0001 C CNN
+F 1 "+5V" H 9565 4473 50  0000 C CNN
+F 2 "" H 9550 4300 50  0001 C CNN
+F 3 "" H 9550 4300 50  0001 C CNN
+	1    9550 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 4450 2    50   Input ~ 0
+UI_knob
+Text GLabel 6050 2350 0    50   Input ~ 0
+UI_Knob
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5F8C2150
+P 950 2400
+F 0 "RV?" H 883 2446 50  0000 R CNN
+F 1 "R_POT_US" H 883 2355 50  0000 R CNN
+F 2 "" H 950 2400 50  0001 C CNN
+F 3 "~" H 950 2400 50  0001 C CNN
+	1    950  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8C2156
+P 950 2550
+F 0 "#PWR?" H 950 2300 50  0001 C CNN
+F 1 "GND" H 955 2377 50  0000 C CNN
+F 2 "" H 950 2550 50  0001 C CNN
+F 3 "" H 950 2550 50  0001 C CNN
+	1    950  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8C215C
+P 950 2250
+F 0 "#PWR?" H 950 2100 50  0001 C CNN
+F 1 "+5V" H 965 2423 50  0000 C CNN
+F 2 "" H 950 2250 50  0001 C CNN
+F 3 "" H 950 2250 50  0001 C CNN
+	1    950  2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L FilamentRecycler09:SpeedController U?
+U 1 1 5F8C2993
+P 1950 2250
+F 0 "U?" H 1925 2715 50  0000 C CNN
+F 1 "SpeedController" H 1925 2624 50  0000 C CNN
+F 2 "" H 1950 2600 50  0001 C CNN
+F 3 "" H 1950 2600 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5F8662F0
+P 3150 2150
+F 0 "M?" H 3308 2146 50  0000 L CNN
+F 1 "Motor_DC" H 3308 2055 50  0000 L CNN
+F 2 "" H 3150 2060 50  0001 C CNN
+F 3 "~" H 3150 2060 50  0001 C CNN
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2400 1550 2400
+$Comp
+L power:+24V #PWR?
+U 1 1 5F8C9495
+P 1350 2100
+F 0 "#PWR?" H 1350 1950 50  0001 C CNN
+F 1 "+24V" H 1365 2273 50  0000 C CNN
+F 2 "" H 1350 2100 50  0001 C CNN
+F 3 "" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8C9996
+P 1450 2250
+F 0 "#PWR?" H 1450 2000 50  0001 C CNN
+F 1 "GND" H 1455 2077 50  0000 C CNN
+F 2 "" H 1450 2250 50  0001 C CNN
+F 3 "" H 1450 2250 50  0001 C CNN
+	1    1450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2250 1550 2250
+Wire Wire Line
+	1550 2100 1350 2100
+Wire Wire Line
+	2300 2100 2550 2100
+Wire Wire Line
+	2550 2100 2550 1950
+Wire Wire Line
+	2550 1950 3150 1950
+$Comp
+L FilamentRecycler09:HeaterController U?
+U 1 1 5F8CC071
+P 4100 1050
+F 0 "U?" H 4100 1465 50  0000 C CNN
+F 1 "HeaterController" H 4100 1374 50  0000 C CNN
+F 2 "" H 4100 1350 50  0001 C CNN
+F 3 "" H 4100 1350 50  0001 C CNN
+	1    4100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 900  5000 900 
+Wire Wire Line
+	5000 1000 4650 1000
+Wire Wire Line
+	4650 1000 4650 1050
+Wire Wire Line
+	3550 1000 3200 1000
+Wire Wire Line
+	3200 1000 3200 700 
+Wire Wire Line
+	3200 700  2200 700 
+Wire Wire Line
+	2200 1000 2950 1000
+Wire Wire Line
+	2950 1000 2950 1100
+Wire Wire Line
+	2950 1100 3550 1100
+Wire Wire Line
+	3550 1200 2850 1200
+Wire Wire Line
+	2850 1200 2850 1150
+Wire Wire Line
+	2850 1150 2650 1150
+Wire Wire Line
+	2650 1450 3550 1450
+Wire Wire Line
+	3550 1450 3550 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5F8D9C8A
+P 3550 900
+F 0 "#PWR?" H 3550 650 50  0001 C CNN
+F 1 "GND" H 3555 727 50  0000 C CNN
+F 2 "" H 3550 900 50  0001 C CNN
+F 3 "" H 3550 900 50  0001 C CNN
+	1    3550 900 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
