@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ArduinoMega2560)(type Legacy)(uri ${KIPRJMOD}/Components/ArduinoMega2560/A000067.lib)(options "")(descr ""))
+  (lib (name FilamentRecycler09)(type Legacy)(uri ${KIPRJMOD}/Components/FilamentRecycler09/FilamentRecycler09.lib)(options "")(descr ""))
+  (lib (name ValpoFilamentExtruderSchematic-rescue)(type Legacy)(uri ${KIPRJMOD}/ValpoFilamentExtruderSchematic-rescue.lib)(options "")(descr ""))
+)

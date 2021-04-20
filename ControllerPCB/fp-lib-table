@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name Arduino)(type KiCad)(uri ${KIPRJMOD}/libraries/arduino-kicad-library-master/Arduino.pretty)(options "")(descr ""))
+  (lib (name BOB-12009)(type KiCad)(uri ${KIPRJMOD}/libraries/BOB-12009)(options "")(descr ""))
+  (lib (name USB-A1HSW6)(type KiCad)(uri ${KIPRJMOD}/libraries/USB-A1HSW6)(options "")(descr ""))
+  (lib (name A-2004-2-4-LPS-N-R)(type KiCad)(uri ${KIPRJMOD}/libraries/A-2004-2-4-LPS-N-R)(options "")(descr ""))
+)
