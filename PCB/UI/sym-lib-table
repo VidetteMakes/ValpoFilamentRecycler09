@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name D6R90_F1_LFS)(type Legacy)(uri ${KIPRJMOD}/D6R90_F1_LFS/D6R90_F1_LFS.lib)(options "")(descr ""))
+  (lib (name D6R90_F1_LFS)(type Legacy)(uri ${KIPRJMOD}/libraries/D6R90_F1_LFS/D6R90_F1_LFS.lib)(options "")(descr ""))
   (lib (name A-2004-2-4-LPS-N-R)(type Legacy)(uri ${KIPRJMOD}/libraries/A-2004-2-4-LPS-N-R/A-2004-2-4-LPS-N-R.lib)(options "")(descr ""))
   (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/libraries/arduino-kicad-library-master/arduino.lib)(options "")(descr ""))
 )
