@@ -1,17 +1,17 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "User Interface Module"
+Date "2021-07-15"
+Rev "1"
+Comp "Vidette Makes"
 Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "Or use one to control both machines."
+Comment3 "Use one for the Extrusion machine, another for the Spooler machine."
+Comment4 "Handles user input/output"
 $EndDescr
 $Comp
 L D6R90_F1_LFS:D6R90_F1_LFS S3
@@ -274,16 +274,16 @@ Wire Wire Line
 $Comp
 L A-2004-2-4-LPS-N-R:A-2004-2-4-LPS-N-R J3
 U 1 1 605E88F0
-P 9950 2000
-F 0 "J3" H 10180 1996 50  0000 L CNN
-F 1 "A-2004-2-4-LPS-N-R" H 10180 1905 50  0000 L CNN
-F 2 "A-2004-2-4-LPS-N-R:ASSMANN_A-2004-2-4-LPS-N-R" H 9950 2000 50  0001 L BNN
-F 3 "" H 9950 2000 50  0001 L BNN
-F 4 "13.20mm" H 9950 2000 50  0001 L BNN "MAXIMUM_PACKGE_HEIGHT"
-F 5 "Manufacturer Recommendations" H 9950 2000 50  0001 L BNN "STANDARD"
-F 6 "00" H 9950 2000 50  0001 L BNN "PARTREV"
-F 7 "ASSMANN" H 9950 2000 50  0001 L BNN "MANUFACTURER"
-	1    9950 2000
+P 8900 1200
+F 0 "J3" H 9130 1196 50  0000 L CNN
+F 1 "A-2004-2-4-LPS-N-R" H 9130 1105 50  0000 L CNN
+F 2 "A-2004-2-4-LPS-N-R:ASSMANN_A-2004-2-4-LPS-N-R" H 8900 1200 50  0001 L BNN
+F 3 "" H 8900 1200 50  0001 L BNN
+F 4 "13.20mm" H 8900 1200 50  0001 L BNN "MAXIMUM_PACKGE_HEIGHT"
+F 5 "Manufacturer Recommendations" H 8900 1200 50  0001 L BNN "STANDARD"
+F 6 "00" H 8900 1200 50  0001 L BNN "PARTREV"
+F 7 "ASSMANN" H 8900 1200 50  0001 L BNN "MANUFACTURER"
+	1    8900 1200
 	1    0    0    -1  
 $EndComp
 Text GLabel 3750 1500 2    50   Input ~ 0
@@ -435,25 +435,25 @@ F 3 "" H 650 3500 50  0001 C CNN
 $EndComp
 Text GLabel 1150 3600 0    50   Input ~ 0
 Vin
-Text GLabel 9550 1700 0    50   Input ~ 0
+Text GLabel 8500 900  0    50   Input ~ 0
 SDA
-Text GLabel 9550 1800 0    50   Input ~ 0
+Text GLabel 8500 1000 0    50   Input ~ 0
 SCL
 $Comp
 L power:GND #PWR08
 U 1 1 605F616B
-P 9150 1950
-F 0 "#PWR08" H 9150 1700 50  0001 C CNN
-F 1 "GND" H 9155 1777 50  0000 C CNN
-F 2 "" H 9150 1950 50  0001 C CNN
-F 3 "" H 9150 1950 50  0001 C CNN
-	1    9150 1950
+P 8100 1150
+F 0 "#PWR08" H 8100 900 50  0001 C CNN
+F 1 "GND" H 8105 977 50  0000 C CNN
+F 2 "" H 8100 1150 50  0001 C CNN
+F 3 "" H 8100 1150 50  0001 C CNN
+	1    8100 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 1950 9150 1900
+	8100 1150 8100 1100
 Wire Wire Line
-	9150 1900 9550 1900
+	8100 1100 8500 1100
 $Comp
 L arduino:Arduino_Uno_Shield XA1
 U 1 1 605FD3D6
@@ -525,19 +525,19 @@ Text GLabel 1800 6500 3    50   Input ~ 0
 SCL
 Text GLabel 1350 6500 3    50   Input ~ 0
 SDA
-Text GLabel 9550 2300 0    50   Input ~ 0
+Text GLabel 8500 1500 0    50   Input ~ 0
 Vin
 $Comp
 L power:GND #PWR0101
 U 1 1 60639C73
-P 9450 2500
-F 0 "#PWR0101" H 9450 2250 50  0001 C CNN
-F 1 "GND" H 9455 2327 50  0000 C CNN
-F 2 "" H 9450 2500 50  0001 C CNN
-F 3 "" H 9450 2500 50  0001 C CNN
-	1    9450 2500
+P 8400 1700
+F 0 "#PWR0101" H 8400 1450 50  0001 C CNN
+F 1 "GND" H 8405 1527 50  0000 C CNN
+F 2 "" H 8400 1700 50  0001 C CNN
+F 3 "" H 8400 1700 50  0001 C CNN
+	1    8400 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 2500 9550 2500
+	8400 1700 8500 1700
 $EndSCHEMATC
