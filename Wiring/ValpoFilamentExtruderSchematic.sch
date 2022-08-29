@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Temperature:PT100 TH1
+L ValpoFilamentExtruderSchematic-rescue:PT100-Sensor_Temperature TH1
 U 1 1 5F891ED8
 P 1950 1700
 F 0 "TH1" H 2048 1746 50  0000 L CNN
@@ -46,7 +46,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 6800 5250 6800
 $Comp
-L power:+5V #PWR010
+L ValpoFilamentExtruderSchematic-rescue:+5V-power #PWR010
 U 1 1 5F8A6013
 P 5250 6800
 F 0 "#PWR010" H 5250 6650 50  0001 C CNN
@@ -57,7 +57,7 @@ F 3 "" H 5250 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR07
+L ValpoFilamentExtruderSchematic-rescue:+24V-power #PWR07
 U 1 1 5F8A6838
 P 3500 6600
 F 0 "#PWR07" H 3500 6450 50  0001 C CNN
@@ -83,7 +83,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 6600 2650 6600
 $Comp
-L Motor:Motor_DC M1
+L ValpoFilamentExtruderSchematic-rescue:Motor_DC-Motor M1
 U 1 1 5F8662F0
 P 4750 4650
 F 0 "M1" H 4908 4646 50  0000 L CNN
@@ -94,7 +94,7 @@ F 3 "~" H 4750 4560 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR03
+L ValpoFilamentExtruderSchematic-rescue:+24V-power #PWR03
 U 1 1 5F8C9495
 P 1950 4200
 F 0 "#PWR03" H 1950 4050 50  0001 C CNN
@@ -105,7 +105,7 @@ F 3 "" H 1950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR04
 U 1 1 5F8C9996
 P 2950 5150
 F 0 "#PWR04" H 2950 4900 50  0001 C CNN
@@ -130,7 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 1950 3300 1950
 $Comp
-L power:GND #PWR09
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR09
 U 1 1 5F8D9C8A
 P 3300 1750
 F 0 "#PWR09" H 3300 1500 50  0001 C CNN
@@ -152,7 +152,7 @@ F 3 "" H 2550 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR025
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR025
 U 1 1 5F8D03BA
 P 4850 6500
 F 0 "#PWR025" H 4850 6250 50  0001 C CNN
@@ -163,7 +163,7 @@ F 3 "" H 4850 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR022
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR022
 U 1 1 5F8D08A6
 P 3600 6700
 F 0 "#PWR022" H 3600 6450 50  0001 C CNN
@@ -179,7 +179,7 @@ TX
 Text GLabel 4350 3100 2    50   Input ~ 0
 RX
 $Comp
-L power:GND #PWR024
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR024
 U 1 1 5F8DD893
 P 3650 3200
 F 0 "#PWR024" H 3650 2950 50  0001 C CNN
@@ -190,7 +190,7 @@ F 3 "" H 3650 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR023
+L ValpoFilamentExtruderSchematic-rescue:+5V-power #PWR023
 U 1 1 5F8DD343
 P 3650 3000
 F 0 "#PWR023" H 3650 2850 50  0001 C CNN
@@ -258,7 +258,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 2050 4750 2350
 $Comp
-L Relay:ADW11 K1
+L ValpoFilamentExtruderSchematic-rescue:ADW11-Relay K1
 U 1 1 5F904063
 P 5400 1800
 F 0 "K1" H 5830 1846 50  0000 L CNN
@@ -273,7 +273,7 @@ Wire Wire Line
 Text Notes 3450 3150 0    50   ~ 0
 Not Implemented
 $Comp
-L Device:D D1
+L ValpoFilamentExtruderSchematic-rescue:D-Device D1
 U 1 1 607F6406
 P 3850 4200
 F 0 "D1" H 3850 3983 50  0000 C CNN
@@ -284,7 +284,7 @@ F 3 "~" H 3850 4200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D2
+L ValpoFilamentExtruderSchematic-rescue:D-Device D2
 U 1 1 607F6D4D
 P 4200 4500
 F 0 "D2" V 4154 4580 50  0000 L CNN
@@ -325,7 +325,7 @@ Connection ~ 2550 6650
 Wire Wire Line
 	2550 6650 2550 6600
 $Comp
-L Motor:Fan M2
+L ValpoFilamentExtruderSchematic-rescue:Fan-Motor M2
 U 1 1 6082F6E1
 P 7550 5150
 F 0 "M2" H 7708 5246 50  0000 L CNN
@@ -354,7 +354,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 4600 7550 4850
 $Comp
-L Motor:Motor_DC M3
+L ValpoFilamentExtruderSchematic-rescue:Motor_DC-Motor M3
 U 1 1 608327A3
 P 10450 4550
 F 0 "M3" H 10608 4546 50  0000 L CNN
@@ -365,7 +365,7 @@ F 3 "~" H 10450 4460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D4
+L ValpoFilamentExtruderSchematic-rescue:D-Device D4
 U 1 1 60832C69
 P 9800 4600
 F 0 "D4" V 9754 4680 50  0000 L CNN
@@ -376,7 +376,7 @@ F 3 "~" H 9800 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D D3
+L ValpoFilamentExtruderSchematic-rescue:D-Device D3
 U 1 1 60832F86
 P 9350 4900
 F 0 "D3" H 9350 5117 50  0000 C CNN
@@ -387,7 +387,7 @@ F 3 "~" H 9350 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_GDS Q1
+L ValpoFilamentExtruderSchematic-rescue:Q_PMOS_GDS-Device Q1
 U 1 1 60833471
 P 8900 5250
 F 0 "Q1" H 9105 5296 50  0000 L CNN
@@ -406,7 +406,7 @@ Wire Wire Line
 Text GLabel 8700 5250 0    50   Input ~ 0
 SpoilerSignalPCB
 $Comp
-L power:GND #PWR05
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR05
 U 1 1 608367FD
 P 9000 5650
 F 0 "#PWR05" H 9000 5400 50  0001 C CNN
@@ -432,7 +432,7 @@ Wire Wire Line
 	10450 4900 10450 4850
 Connection ~ 9800 4900
 $Comp
-L power:+24V #PWR06
+L ValpoFilamentExtruderSchematic-rescue:+24V-power #PWR06
 U 1 1 6083A8BB
 P 9300 4200
 F 0 "#PWR06" H 9300 4050 50  0001 C CNN
@@ -446,7 +446,7 @@ Wire Wire Line
 	9300 4200 9800 4200
 Connection ~ 9800 4200
 $Comp
-L power:+12V #PWR011
+L ValpoFilamentExtruderSchematic-rescue:+12V-power #PWR011
 U 1 1 6083BC6F
 P 9850 1150
 F 0 "#PWR011" H 9850 1000 50  0001 C CNN
@@ -457,7 +457,7 @@ F 3 "" H 9850 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR012
+L ValpoFilamentExtruderSchematic-rescue:+5V-power #PWR012
 U 1 1 6083C212
 P 9850 1400
 F 0 "#PWR012" H 9850 1250 50  0001 C CNN
@@ -468,7 +468,7 @@ F 3 "" H 9850 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR08
 U 1 1 6083C58D
 P 9800 1750
 F 0 "#PWR08" H 9800 1500 50  0001 C CNN
@@ -531,7 +531,7 @@ Connection ~ 4150 6650
 Wire Wire Line
 	4150 6650 3600 6650
 $Comp
-L power:GND #PWR01
+L ValpoFilamentExtruderSchematic-rescue:GND-power #PWR01
 U 1 1 607EA678
 P 5100 5750
 F 0 "#PWR01" H 5100 5500 50  0001 C CNN
@@ -542,7 +542,7 @@ F 3 "" H 5100 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR02
+L ValpoFilamentExtruderSchematic-rescue:+24V-power #PWR02
 U 1 1 607EA9FD
 P 5350 6050
 F 0 "#PWR02" H 5350 5900 50  0001 C CNN

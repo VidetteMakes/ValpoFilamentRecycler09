@@ -1,56 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_D
-#
-DEF Device_D D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Q_PMOS_GDS
-#
-DEF Device_Q_PMOS_GDS Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_PMOS_GDS" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
-P 4 0 1 0 90 0 50 15 50 -15 90 0 F
-P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
-P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # FilamentRecycler09_120ACV_24VDC
 #
 DEF FilamentRecycler09_120ACV_24VDC U 0 40 Y Y 1 F N
@@ -188,59 +138,56 @@ X Vout 4 350 150 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Motor_Fan
+# ValpoFilamentExtruderSchematic-rescue_+12V-power
 #
-DEF Motor_Fan M 0 0 Y Y 1 F N
-F0 "M" 100 200 50 H V L CNN
-F1 "Motor_Fan" 100 -100 50 H V L TNN
-F2 "" 0 10 50 H I C CNN
-F3 "" 0 10 50 H I C CNN
-$FPLIST
- PinHeader*P2.54mm*
- TerminalBlock*
-$ENDFPLIST
+DEF ValpoFilamentExtruderSchematic-rescue_+12V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_+12V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 DRAW
-A -98 94 113 297 -910 0 1 0 N 0 150 -100 -20
-A 0 -70 112 1534 266 0 1 0 N -100 -20 100 -20
-A 103 95 115 -915 1519 0 1 0 N 100 -20 0 150
-C 0 40 128 0 1 10 N
-P 2 0 1 0 0 -200 0 -180 N
-P 2 0 1 0 0 -88 0 -104 N
-P 2 0 1 0 0 168 0 182 N
-P 2 0 1 0 0 180 0 200 N
-X + 1 0 300 100 D 50 50 1 1 P
-X - 2 0 -200 100 U 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Motor_Motor_DC
+# ValpoFilamentExtruderSchematic-rescue_+24V-power
 #
-DEF Motor_Motor_DC M 0 0 Y Y 1 F N
-F0 "M" 100 100 50 H V L CNN
-F1 "Motor_Motor_DC" 100 -200 50 H V L TNN
-F2 "" 0 -90 50 H I C CNN
-F3 "" 0 -90 50 H I C CNN
-$FPLIST
- PinHeader*P2.54mm*
- TerminalBlock*
-$ENDFPLIST
+DEF ValpoFilamentExtruderSchematic-rescue_+24V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_+24V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 DRAW
-C 0 -60 128 0 1 10 N
-P 5 0 0 0 -50 -130 -50 20 0 -80 50 20 50 -130 N
-P 2 0 1 0 0 -300 0 -280 N
-P 2 0 1 0 0 -188 0 -204 N
-P 2 0 1 0 0 68 0 82 N
-P 2 0 1 0 0 80 0 100 N
-X + 1 0 200 100 D 50 50 1 1 P
-X - 2 0 -300 100 U 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Relay_ADW11
+# ValpoFilamentExtruderSchematic-rescue_+5V-power
 #
-DEF Relay_ADW11 K 0 20 Y Y 1 F N
+DEF ValpoFilamentExtruderSchematic-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# ValpoFilamentExtruderSchematic-rescue_ADW11-Relay
+#
+DEF ValpoFilamentExtruderSchematic-rescue_ADW11-Relay K 0 20 Y Y 1 F N
 F0 "K" 450 150 50 H V C CNN
-F1 "Relay_ADW11" 550 50 50 H V C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_ADW11-Relay" 550 50 50 H V C CNN
 F2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" 1325 -50 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -271,14 +218,96 @@ X ~ 6 -200 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Sensor_Temperature_PT100
+# ValpoFilamentExtruderSchematic-rescue_D-Device
 #
-DEF Sensor_Temperature_PT100 TH 0 0 N Y 1 F N
+DEF ValpoFilamentExtruderSchematic-rescue_D-Device D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_D-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ValpoFilamentExtruderSchematic-rescue_Fan-Motor
+#
+DEF ValpoFilamentExtruderSchematic-rescue_Fan-Motor M 0 0 Y Y 1 F N
+F0 "M" 100 200 50 H V L CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_Fan-Motor" 100 -100 50 H V L TNN
+F2 "" 0 10 50 H I C CNN
+F3 "" 0 10 50 H I C CNN
+$FPLIST
+ PinHeader*P2.54mm*
+ TerminalBlock*
+$ENDFPLIST
+DRAW
+A -98 94 113 297 -910 0 1 0 N 0 150 -100 -20
+A 0 -70 112 1534 266 0 1 0 N -100 -20 100 -20
+A 103 95 115 -915 1519 0 1 0 N 100 -20 0 150
+C 0 40 128 0 1 10 N
+P 2 0 1 0 0 -200 0 -180 N
+P 2 0 1 0 0 -88 0 -104 N
+P 2 0 1 0 0 168 0 182 N
+P 2 0 1 0 0 180 0 200 N
+X + 1 0 300 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ValpoFilamentExtruderSchematic-rescue_GND-power
+#
+DEF ValpoFilamentExtruderSchematic-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# ValpoFilamentExtruderSchematic-rescue_Motor_DC-Motor
+#
+DEF ValpoFilamentExtruderSchematic-rescue_Motor_DC-Motor M 0 0 Y Y 1 F N
+F0 "M" 100 100 50 H V L CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_Motor_DC-Motor" 100 -200 50 H V L TNN
+F2 "" 0 -90 50 H I C CNN
+F3 "" 0 -90 50 H I C CNN
+$FPLIST
+ PinHeader*P2.54mm*
+ TerminalBlock*
+$ENDFPLIST
+DRAW
+C 0 -60 128 0 1 10 N
+P 5 0 0 0 -50 -130 -50 20 0 -80 50 20 50 -130 N
+P 2 0 1 0 0 -300 0 -280 N
+P 2 0 1 0 0 -188 0 -204 N
+P 2 0 1 0 0 68 0 82 N
+P 2 0 1 0 0 80 0 100 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ValpoFilamentExtruderSchematic-rescue_PT100-Sensor_Temperature
+#
+DEF ValpoFilamentExtruderSchematic-rescue_PT100-Sensor_Temperature TH 0 0 N Y 1 F N
 F0 "TH" -175 0 50 V V C CNN
-F1 "Sensor_Temperature_PT100" 125 0 50 V V C CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_PT100-Sensor_Temperature" 125 0 50 V V C CNN
 F2 "" 0 50 50 H I C CNN
 F3 "" 0 50 50 H I C CNN
-ALIAS PT500 PT1000
 $FPLIST
  TO?92*
  PIN?ARRAY*
@@ -306,61 +335,31 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power_+12V
+# ValpoFilamentExtruderSchematic-rescue_Q_PMOS_GDS-Device
 #
-DEF power_+12V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+12V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+DEF ValpoFilamentExtruderSchematic-rescue_Q_PMOS_GDS-Device Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "ValpoFilamentExtruderSchematic-rescue_Q_PMOS_GDS-Device" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +12V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+24V
-#
-DEF power_+24V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+24V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +24V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
