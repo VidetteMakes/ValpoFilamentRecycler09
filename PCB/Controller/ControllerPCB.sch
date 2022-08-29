@@ -40,7 +40,7 @@ F 7 "SparkFun Electronics" H 9250 3750 50  0001 L BNN "MANUFACTURER"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR027
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR027
 U 1 1 605B261D
 P 10150 4150
 F 0 "#PWR027" H 10150 3900 50  0001 C CNN
@@ -55,7 +55,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 3450 9950 3450
 $Comp
-L power:GND #PWR022
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR022
 U 1 1 605B48B7
 P 7050 2350
 F 0 "#PWR022" H 7050 2100 50  0001 C CNN
@@ -75,7 +75,7 @@ Connection ~ 7200 2350
 Wire Wire Line
 	7200 2350 7350 2350
 $Comp
-L power:+3.3V #PWR05
+L ControllerPCB-rescue:+3.3V-power-ControllerPCB-rescue #PWR05
 U 1 1 605B5E31
 P 1000 5000
 F 0 "#PWR05" H 1000 4850 50  0001 C CNN
@@ -88,7 +88,7 @@ $EndComp
 Wire Wire Line
 	1000 5000 1150 5000
 $Comp
-L power:GND #PWR03
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR03
 U 1 1 605B64CE
 P 850 4500
 F 0 "#PWR03" H 850 4250 50  0001 C CNN
@@ -115,7 +115,7 @@ F 4 "On-Shore Technology, Inc." H 7650 3650 50  0001 L BNN "MANUFACTURER"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR023
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR023
 U 1 1 605B8B46
 P 8150 3400
 F 0 "#PWR023" H 8150 3150 50  0001 C CNN
@@ -150,7 +150,7 @@ SDA
 Text GLabel 1150 2000 0    50   Input ~ 0
 SCL
 $Comp
-L Transistor_FET:2N7002 Q2
+L ControllerPCB-rescue:2N7002-Transistor_FET-ControllerPCB-rescue Q2
 U 1 1 605BDF2C
 P 9900 6000
 F 0 "Q2" H 10104 6046 50  0000 L CNN
@@ -161,7 +161,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9900 6000 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR026
 U 1 1 605C74D4
 P 10000 6350
 F 0 "#PWR026" H 10000 6100 50  0001 C CNN
@@ -172,7 +172,7 @@ F 3 "" H 10000 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L ControllerPCB-rescue:R-Device-ControllerPCB-rescue R4
 U 1 1 605CADF4
 P 9700 6200
 F 0 "R4" H 9770 6246 50  0000 L CNN
@@ -206,7 +206,7 @@ Connection ~ 10000 5400
 Text Notes 3250 5850 0    118  ~ 0
 I2C Pullup
 $Comp
-L Device:R R1
+L ControllerPCB-rescue:R-Device-ControllerPCB-rescue R1
 U 1 1 605D250C
 P 3650 6400
 F 0 "R1" H 3720 6446 50  0000 L CNN
@@ -217,7 +217,7 @@ F 3 "~" H 3650 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L ControllerPCB-rescue:R-Device-ControllerPCB-rescue R2
 U 1 1 605D268F
 P 3950 6400
 F 0 "R2" H 4020 6446 50  0000 L CNN
@@ -236,7 +236,7 @@ SDA
 Text GLabel 3950 6550 3    50   Input ~ 0
 SCL
 $Comp
-L Connector:Conn_01x06_Male J10
+L ControllerPCB-rescue:Conn_01x06_Male-Connector-ControllerPCB-rescue J10
 U 1 1 605D514E
 P 7600 5700
 F 0 "J10" H 7708 6081 50  0000 C CNN
@@ -249,7 +249,7 @@ $EndComp
 Text GLabel 7800 5600 2    50   Input ~ 0
 RollerMotor-
 $Comp
-L power:GND #PWR025
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR025
 U 1 1 605D7349
 P 8650 5700
 F 0 "#PWR025" H 8650 5450 50  0001 C CNN
@@ -266,7 +266,7 @@ EncoderB
 Text Notes 3250 7150 2    118  ~ 0
 Slack Sensor
 $Comp
-L Connector:Conn_01x04_Male J2
+L ControllerPCB-rescue:Conn_01x04_Male-Connector-ControllerPCB-rescue J2
 U 1 1 605EB896
 P 2150 7500
 F 0 "J2" H 2258 7781 50  0000 C CNN
@@ -277,7 +277,7 @@ F 3 "~" H 2150 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR07
 U 1 1 605EC293
 P 2900 7400
 F 0 "#PWR07" H 2900 7150 50  0001 C CNN
@@ -294,7 +294,7 @@ SlackS1
 Text Notes 5850 5850 2    118  ~ 0
 Tachometer
 $Comp
-L Connector:Conn_01x03_Male J5
+L ControllerPCB-rescue:Conn_01x03_Male-Connector-ControllerPCB-rescue J5
 U 1 1 605F2464
 P 5100 6250
 F 0 "J5" H 5208 6531 50  0000 C CNN
@@ -305,7 +305,7 @@ F 3 "~" H 5100 6250 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR015
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR015
 U 1 1 605F295E
 P 5700 6400
 F 0 "#PWR015" H 5700 6150 50  0001 C CNN
@@ -344,7 +344,7 @@ Fans
 Text Notes 1850 6000 2    118  ~ 0
 Scales
 $Comp
-L Connector:Conn_01x02_Male J1
+L ControllerPCB-rescue:Conn_01x02_Male-Connector-ControllerPCB-rescue J1
 U 1 1 605FC928
 P 3750 7450
 F 0 "J1" H 3858 7631 50  0000 C CNN
@@ -355,7 +355,7 @@ F 3 "~" H 3750 7450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J3
+L ControllerPCB-rescue:Conn_01x02_Male-Connector-ControllerPCB-rescue J3
 U 1 1 605FCF26
 P 5250 7450
 F 0 "J3" H 5358 7631 50  0000 C CNN
@@ -366,7 +366,7 @@ F 3 "~" H 5250 7450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR02
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR02
 U 1 1 605FD458
 P 4200 7450
 F 0 "#PWR02" H 4200 7200 50  0001 C CNN
@@ -379,7 +379,7 @@ $EndComp
 Wire Wire Line
 	4200 7450 3950 7450
 $Comp
-L power:GND #PWR08
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR08
 U 1 1 605FEF03
 P 5800 7500
 F 0 "#PWR08" H 5800 7250 50  0001 C CNN
@@ -402,7 +402,7 @@ SpollerMotor
 Text GLabel 3750 1400 2    50   Input ~ 0
 SpollerMotor
 $Comp
-L Transistor_FET:2N7002 Q1
+L ControllerPCB-rescue:2N7002-Transistor_FET-ControllerPCB-rescue Q1
 U 1 1 6060B486
 P 6200 3750
 F 0 "Q1" H 6404 3796 50  0000 L CNN
@@ -413,7 +413,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6200 3750 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR017
 U 1 1 6060B48C
 P 6300 4100
 F 0 "#PWR017" H 6300 3850 50  0001 C CNN
@@ -424,7 +424,7 @@ F 3 "" H 6300 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L ControllerPCB-rescue:R-Device-ControllerPCB-rescue R3
 U 1 1 6060B493
 P 6000 3950
 F 0 "R3" H 6070 3996 50  0000 L CNN
@@ -451,7 +451,7 @@ Fans-
 Wire Wire Line
 	6200 3200 6300 3200
 $Comp
-L Connector:Conn_01x02_Male J6
+L ControllerPCB-rescue:Conn_01x02_Male-Connector-ControllerPCB-rescue J6
 U 1 1 606176F7
 P 4800 3900
 F 0 "J6" H 4908 4081 50  0000 C CNN
@@ -464,7 +464,7 @@ $EndComp
 Text GLabel 5000 3900 2    50   Input ~ 0
 Fans-
 $Comp
-L Connector:Conn_01x04_Male J8
+L ControllerPCB-rescue:Conn_01x04_Male-Connector-ControllerPCB-rescue J8
 U 1 1 60618AAD
 P 850 6400
 F 0 "J8" H 958 6681 50  0000 C CNN
@@ -475,7 +475,7 @@ F 3 "~" H 850 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J9
+L ControllerPCB-rescue:Conn_01x04_Male-Connector-ControllerPCB-rescue J9
 U 1 1 6061ADD1
 P 1950 6400
 F 0 "J9" H 2058 6681 50  0000 C CNN
@@ -498,7 +498,7 @@ ScaleCLK1
 Text GLabel 2150 6500 2    50   Input ~ 0
 ScaleCLK2
 $Comp
-L power:+5V #PWR018
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR018
 U 1 1 6061D833
 P 1350 6750
 F 0 "#PWR018" H 1350 6600 50  0001 C CNN
@@ -509,7 +509,7 @@ F 3 "" H 1350 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR019
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR019
 U 1 1 6061DEAF
 P 2550 6750
 F 0 "#PWR019" H 2550 6600 50  0001 C CNN
@@ -555,7 +555,7 @@ F 7 "ASSMANN" H 5550 1500 50  0001 L BNN "MANUFACTURER"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR09
 U 1 1 60626B47
 P 4850 2000
 F 0 "#PWR09" H 4850 1750 50  0001 C CNN
@@ -568,7 +568,7 @@ $EndComp
 Wire Wire Line
 	4850 2000 5150 2000
 $Comp
-L power:GND #PWR011
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR011
 U 1 1 6062ADC7
 P 4900 1400
 F 0 "#PWR011" H 4900 1150 50  0001 C CNN
@@ -585,7 +585,7 @@ SDA
 Text GLabel 5150 1300 0    50   Input ~ 0
 SCL
 $Comp
-L power:GND #PWR012
+L ControllerPCB-rescue:GND-power-ControllerPCB-rescue #PWR012
 U 1 1 6062EBC7
 P 1650 7550
 F 0 "#PWR012" H 1650 7300 50  0001 C CNN
@@ -598,7 +598,7 @@ $EndComp
 Wire Wire Line
 	1500 7550 1650 7550
 $Comp
-L power:+5V #PWR029
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR029
 U 1 1 60636D5E
 P 10300 3450
 F 0 "#PWR029" H 10300 3300 50  0001 C CNN
@@ -609,7 +609,7 @@ F 3 "" H 10300 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0101
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR0101
 U 1 1 605E7A4C
 P 3800 6150
 F 0 "#PWR0101" H 3800 6000 50  0001 C CNN
@@ -629,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 5700 8650 5700
 $Comp
-L power:+5V #PWR024
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR024
 U 1 1 605D9A42
 P 8900 6000
 F 0 "#PWR024" H 8900 5850 50  0001 C CNN
@@ -646,7 +646,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 6000 8900 6000
 $Comp
-L power:+5V #PWR0102
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR0102
 U 1 1 6062089A
 P 8150 5500
 F 0 "#PWR0102" H 8150 5350 50  0001 C CNN
@@ -661,7 +661,7 @@ Wire Wire Line
 Text GLabel 7350 2750 0    50   Input ~ 0
 Vin
 $Comp
-L Connector:Conn_01x03_Male J4
+L ControllerPCB-rescue:Conn_01x03_Male-Connector-ControllerPCB-rescue J4
 U 1 1 60628487
 P 1300 7450
 F 0 "J4" H 1272 7382 50  0000 R CNN
@@ -674,7 +674,7 @@ $EndComp
 Text GLabel 1500 7350 2    50   Input ~ 0
 Vin
 $Comp
-L Connector:Conn_01x02_Male J12
+L ControllerPCB-rescue:Conn_01x02_Male-Connector-ControllerPCB-rescue J12
 U 1 1 6062B5BD
 P 4750 3500
 F 0 "J12" H 4858 3681 50  0000 C CNN
@@ -687,7 +687,7 @@ $EndComp
 Text GLabel 4950 3500 2    50   Input ~ 0
 Fans-
 $Comp
-L Connector:Conn_01x02_Male J11
+L ControllerPCB-rescue:Conn_01x02_Male-Connector-ControllerPCB-rescue J11
 U 1 1 6062F882
 P 4750 3100
 F 0 "J11" H 4858 3281 50  0000 C CNN
@@ -703,7 +703,7 @@ Connection ~ 6300 3200
 Wire Wire Line
 	6300 2900 6250 2900
 $Comp
-L Device:D D1
+L ControllerPCB-rescue:D-Device-ControllerPCB-rescue D1
 U 1 1 6066CFE2
 P 6300 3350
 F 0 "D1" H 6300 3567 50  0000 C CNN
@@ -716,7 +716,7 @@ $EndComp
 Wire Wire Line
 	6300 3500 6300 3550
 $Comp
-L Device:D D4
+L ControllerPCB-rescue:D-Device-ControllerPCB-rescue D4
 U 1 1 60675D3C
 P 6300 3050
 F 0 "D4" V 6254 3130 50  0000 L CNN
@@ -727,7 +727,7 @@ F 3 "~" H 6300 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D D3
+L ControllerPCB-rescue:D-Device-ControllerPCB-rescue D3
 U 1 1 606853B4
 P 10000 5150
 F 0 "D3" V 9954 5230 50  0000 L CNN
@@ -738,7 +738,7 @@ F 3 "~" H 10000 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D D2
+L ControllerPCB-rescue:D-Device-ControllerPCB-rescue D2
 U 1 1 606864CA
 P 10000 5600
 F 0 "D2" V 10046 5520 50  0000 R CNN
@@ -761,7 +761,7 @@ LV2
 Text GLabel 8550 3750 0    50   Input ~ 0
 LV2
 $Comp
-L power:+5V #PWR0103
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR0103
 U 1 1 606BA9A1
 P 5700 6150
 F 0 "#PWR0103" H 5700 6000 50  0001 C CNN
@@ -772,7 +772,7 @@ F 3 "" H 5700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR0104
 U 1 1 606BC1EC
 P 3100 7700
 F 0 "#PWR0104" H 3100 7550 50  0001 C CNN
@@ -797,7 +797,7 @@ RollerSpeed
 Text GLabel 5150 1800 0    50   Input ~ 0
 Vin
 $Comp
-L power:+5V #PWR0105
+L ControllerPCB-rescue:+5V-power-ControllerPCB-rescue #PWR0105
 U 1 1 6063DDF5
 P 750 5100
 F 0 "#PWR0105" H 750 4950 50  0001 C CNN

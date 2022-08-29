@@ -3,4 +3,5 @@
   (lib (name BOB-12009)(type Legacy)(uri ${KIPRJMOD}/libraries/BOB-12009/BOB-12009.lib)(options "")(descr ""))
   (lib (name USB-A1HSW6)(type Legacy)(uri ${KIPRJMOD}/libraries/USB-A1HSW6/USB-A1HSW6.lib)(options "")(descr ""))
   (lib (name A-2004-2-4-LPS-N-R)(type Legacy)(uri ${KIPRJMOD}/libraries/A-2004-2-4-LPS-N-R/A-2004-2-4-LPS-N-R.lib)(options "")(descr ""))
+  (lib (name ControllerPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/ControllerPCB-rescue.lib)(options "")(descr ""))
 )
